@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТурБус - Комфортабельные автобусные перевозки по России</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Тур<span>Бус</span></a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active">История</a></li>
+          <li class="nav-item"><a href="buses.html" class="nav-link">Автобусы</a></li>
+          <li class="nav-item"><a href="tours.html" class="nav-link">Туры</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Герой секция -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Комфортабельные автобусные перевозки по всей России</h1>
+        <p class="hero-text">Более 15 лет мы обеспечиваем безопасные и комфортные поездки для наших клиентов</p>
+        <a href="contact.html" class="btn btn-accent">Заказать автобус</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- История компании -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Наша история</h2>
+      <div class="history">
+        <div class="history-item">
+          <h3 class="history-year">2008 - Основание компании</h3>
+          <p>Компания "ТурБус" была основана в 2008 году как небольшой семейный бизнес с парком из всего 3 автобусов. Наша цель была проста - предоставлять качественные транспортные услуги для туристических групп.</p>
+        </div>
+        
+        <div class="history-item">
+          <h3 class="history-year">2012 - Первое расширение</h3>
+          <p>К 2012 году мы расширили наш парк до 10 автобусов и начали сотрудничество с крупными туристическими агентствами. В этом же году мы получили первые награды за качество обслуживания.</p>
+        </div>
+        
+        <div class="history-item">
+          <h3 class="history-year">2015 - Выход на федеральный уровень</h3>
+          <p>В 2015 году мы открыли филиалы в 5 крупнейших городах России и начали предлагать межрегиональные перевозки. Наш автопарк вырос до 30 современных автобусов.</p>
+        </div>
+        
+        <div class="history-item">
+          <h3 class="history-year">2020 - Новые стандарты безопасности</h3>
+          <p>В 2020 году мы полностью обновили автопарк, внедрили систему мониторинга транспорта в реальном времени и повысили стандарты безопасности. Все наши автобусы теперь соответствуют евро-5.</p>
+        </div>
+        
+        <div class="history-item">
+          <h3 class="history-year">2023 - Настоящее время</h3>
+          <p>Сегодня "ТурБус" - это более 50 современных автобусов, 100 профессиональных водителей и тысячи довольных клиентов по всей России. Мы продолжаем развиваться и улучшать наши услуги.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>ТурБус</h3>
+          <p>Комфортабельные автобусные перевозки по всей России с 2008 года.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">История компании</a></li>
+            <li><a href="buses.html">Наш автопарк</a></li>
+            <li><a href="tours.html">Популярные туры</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+            <li><i class="fas fa-envelope"></i> info@turbus.ru</li>
+            <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Транспортная, 15</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 ТурБус. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Фиксированная шапка при скролле
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

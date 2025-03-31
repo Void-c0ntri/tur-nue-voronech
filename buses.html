@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТурБус - Наш автопарк (15 автобусов)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Тур<span>Бус</span></a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">История</a></li>
+          <li class="nav-item"><a href="buses.html" class="nav-link active">Автобусы</a></li>
+          <li class="nav-item"><a href="tours.html" class="nav-link">Туры</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Герой секция -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Наш автопарк - 15 современных автобусов</h1>
+        <p class="hero-text">Подберем идеальный транспорт для вашего путешествия</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ассортимент автобусов -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Выберите подходящий автобус</h2>
+      
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="micro">Микроавтобусы</button>
+        <button class="filter-btn" data-filter="medium">Средние</button>
+        <button class="filter-btn" data-filter="large">Большие</button>
+        <button class="filter-btn" data-filter="vip">VIP-класс</button>
+      </div>
+      
+      <div class="grid">
+        <!-- Автобус 1 -->
+        <div class="card" data-category="micro">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mercedes Sprinter">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mercedes Sprinter (18 мест)</h3>
+            <p class="card-text">Компактный и маневренный автобус для небольших групп. Кондиционер, удобные сиденья, багажное отделение.</p>
+            <p class="card-price">от 1 500 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 18 мест</span>
+              <span><i class="fas fa-snowflake"></i> Кондиционер</span>
+            </div>
+            <button class="btn btn-view" data-id="1">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 2 -->
+        <div class="card" data-category="micro">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ford Transit">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ford Transit (16 мест)</h3>
+            <p class="card-text">Надежный микроавтобус для городских и междугородних поездок. Экономичный расход топлива.</p>
+            <p class="card-price">от 1 400 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 16 мест</span>
+              <span><i class="fas fa-wifi"></i> Wi-Fi</span>
+            </div>
+            <button class="btn btn-view" data-id="2">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 3 -->
+        <div class="card" data-category="micro">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc2a1e5d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Volkswagen Crafter">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Volkswagen Crafter (20 мест)</h3>
+            <p class="card-text">Просторный салон, комфортные сиденья с подлокотниками, система климат-контроля.</p>
+            <p class="card-price">от 1 800 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 20 мест</span>
+              <span><i class="fas fa-plug"></i> Розетки</span>
+            </div>
+            <button class="btn btn-view" data-id="3">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 4 -->
+        <div class="card" data-category="medium">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hyundai County">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hyundai County (35 мест)</h3>
+            <p class="card-text">Универсальный автобус средней вместимости с комфортабельными сиденьями и багажным отделением.</p>
+            <p class="card-price">от 2 500 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 35 мест</span>
+              <span><i class="fas fa-suitcase"></i> Багажник</span>
+            </div>
+            <button class="btn btn-view" data-id="4">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 5 -->
+        <div class="card" data-category="medium">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="PAZ-3205">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">PAZ-3205 (30 мест)</h3>
+            <p class="card-text">Классический российский автобус для перевозки групп по городу и пригороду. Надежность и простота.</p>
+            <p class="card-price">от 1 900 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 30 мест</span>
+              <span><i class="fas fa-shield-alt"></i> Надежность</span>
+            </div>
+            <button class="btn btn-view" data-id="5">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 6 -->
+        <div class="card" data-category="medium">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Higer KLQ">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Higer KLQ (33 места)</h3>
+            <p class="card-text">Современный автобус китайского производства с кондиционером и удобными сиденьями.</p>
+            <p class="card-price">от 2 300 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 33 места</span>
+              <span><i class="fas fa-snowflake"></i> Кондиционер</span>
+            </div>
+            <button class="btn btn-view" data-id="6">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 7 -->
+        <div class="card" data-category="large">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1535448580089-c7f9490c78b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Neoplan Tourliner">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Neoplan Tourliner (50 мест)</h3>
+            <p class="card-text">Вместительный автобус премиум-класса с кондиционером, туалетом, кухонной зоной и мультимедиа.</p>
+            <p class="card-price">от 3 500 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 50 мест</span>
+              <span><i class="fas fa-toilet"></i> Туалет</span>
+            </div>
+            <button class="btn btn-view" data-id="7">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 8 -->
+        <div class="card" data-category="large">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="MAN Lion's Coach">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">MAN Lion's Coach (55 мест)</h3>
+            <p class="card-text">Комфортабельный автобус для дальних поездок с индивидуальной вентиляцией и откидными столиками.</p>
+            <p class="card-price">от 3 800 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 55 мест</span>
+              <span><i class="fas fa-utensils"></i> Столики</span>
+            </div>
+            <button class="btn btn-view" data-id="8">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 9 -->
+        <div class="card" data-category="large">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Scania Touring">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Scania Touring (53 места)</h3>
+            <p class="card-text">Шведское качество и комфорт для длительных путешествий. Система климат-контроля, удобные кресла.</p>
+            <p class="card-price">от 4 000 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 53 места</span>
+              <span><i class="fas fa-wifi"></i> Wi-Fi</span>
+            </div>
+            <button class="btn btn-view" data-id="9">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 10 -->
+        <div class="card" data-category="large">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Volvo 9700">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Volvo 9700 (48 мест)</h3>
+            <p class="card-text">Флагманский автобус для самых требовательных клиентов. Максимальный комфорт и безопасность.</p>
+            <p class="card-price">от 4 200 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 48 мест</span>
+              <span><i class="fas fa-tv"></i> ТВ</span>
+            </div>
+            <button class="btn btn-view" data-id="10">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 11 -->
+        <div class="card" data-category="vip">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Setra S 516 HD">
+            <div class="card-badge">VIP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Setra S 516 HD (24 места)</h3>
+            <p class="card-text">Роскошный автобус бизнес-класса с кожаными сиденьями, баром, Wi-Fi и индивидуальной системой развлечений.</p>
+            <p class="card-price">от 5 000 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 24 места</span>
+              <span><i class="fas fa-glass-martini-alt"></i> Бар</span>
+            </div>
+            <button class="btn btn-view" data-id="11">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 12 -->
+        <div class="card" data-category="vip">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mercedes-Benz Tourismo">
+            <div class="card-badge">VIP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mercedes-Benz Tourismo (28 мест)</h3>
+            <p class="card-text">Премиальный автобус для корпоративных клиентов. Полный пакет услуг и индивидуальное обслуживание.</p>
+            <p class="card-price">от 5 500 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 28 мест</span>
+              <span><i class="fas fa-concierge-bell"></i> Обслуживание</span>
+            </div>
+            <button class="btn btn-view" data-id="12">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 13 -->
+        <div class="card" data-category="vip">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Irizar i6">
+            <div class="card-badge">VIP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Irizar i6 (20 мест)</h3>
+            <p class="card-text">Испанский автобус премиум-класса с панорамными окнами, мини-кухней и системой индивидуального освещения.</p>
+            <p class="card-price">от 6 000 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 20 мест</span>
+              <span><i class="fas fa-utensils"></i> Кухня</span>
+            </div>
+            <button class="btn btn-view" data-id="13">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 14 -->
+        <div class="card" data-category="vip">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Van Hool TX">
+            <div class="card-badge">VIP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Van Hool TX (22 места)</h3>
+            <p class="card-text">Бельгийский автобус класса люкс с кожаными креслами бизнес-класса, холодильником и кофемашиной.</p>
+            <p class="card-price">от 6 500 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 22 места</span>
+              <span><i class="fas fa-coffee"></i> Кофемашина</span>
+            </div>
+            <button class="btn btn-view" data-id="14">Подробнее</button>
+          </div>
+        </div>
+        
+        <!-- Автобус 15 -->
+        <div class="card" data-category="vip">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Yutong T12">
+            <div class="card-badge">VIP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Yutong T12 (26 мест)</h3>
+            <p class="card-text">Электрический автобус премиум-класса с бесшумным ходом, панорамной крышей и системой развлечений.</p>
+            <p class="card-price">от 7 000 ₽/час</p>
+            <div class="card-features">
+              <span><i class="fas fa-users"></i> 26 мест</span>
+              <span><i class="fas fa-leaf"></i> Эко</span>
+            </div>
+            <button class="btn btn-view" data-id="15">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="busModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-img">
+        <img id="modalBusImg" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title" id="modalBusTitle"></h3>
+        <p class="modal-price" id="modalBusPrice"></p>
+        <p class="modal-text" id="modalBusText"></p>
+        
+        <div class="modal-features" id="modalBusFeatures"></div>
+        
+        <div class="modal-details">
+          <h4>Характеристики:</h4>
+          <ul id="modalBusSpecs"></ul>
+        </div>
+        
+        <a href="contact.html" class="btn btn-accent">Заказать этот автобус</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>ТурБус</h3>
+          <p>Комфортабельные автобусные перевозки по всей России с 2008 года.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">История компании</a></li>
+            <li><a href="buses.html">Наш автопарк</a></li>
+            <li><a href="tours.html">Популярные туры</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+            <li><i class="fas fa-envelope"></i> info@turbus.ru</li>
+            <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Транспортная, 15</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 ТурБус. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Фиксированная шапка при скролле
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Фильтрация автобусов
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const busCards = document.querySelectorAll('.card');
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(btn => btn.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.dataset.filter;
+        
+        busCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Данные для модального окна автобусов
+    const busesData = [
+      {
+        id: 1,
+        title: "Mercedes Sprinter (18 мест)",
+        price: "от 1 500 ₽/час",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        description: "Компактный и маневренный автобус для небольших групп. Идеально подходит для городских поездок и коротких путешествий. Оснащен кондиционером, удобными сиденьями с регулируемыми спинками и багажным отделением.",
+        features: [
+          {icon: "users", text: "18 мест"},
+          {icon: "snowflake", text: "Кондиционер"},
+          {icon: "plug", text: "Розетки"},
+          {icon: "wifi", text: "Wi-Fi (опция)"}
+        ],
+        specs: [
+          "Год выпуска: 2020",
+          "Двигатель: 2.2 л, 163 л.с.",
+          "Расход топлива: 9.5 л/100 км",
+          "Длина: 7.3 м",
+          "Макс. скорость: 160 км/ч",
+          "Коробка передач: автоматическая"
+        ]
+      },
+      {
+        id: 2,
+        title: "Ford Transit (16 мест)",
+        price: "от 1 400 ₽/час",
+        image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        description: "Надежный микроавтобус для городских и междугородних поездок. Отличается экономичным расходом топлива и высокой надежностью. В салоне предусмотрены багажные полки и система вентиляции.",
+        features: [
+          {icon: "users", text: "16 мест"},
+          {icon: "wifi", text: "Wi-Fi"},
+          {icon: "snowflake", text: "Кондиционер"},
+          {icon: "shield-alt", text: "Система безопасности"}
+        ],
+        specs: [
+          "Год выпуска: 2019",
+          "Двигатель: 2.0 л, 170 л.с.",
+          "Расход топлива: 8.8 л/100 км",
+          "Длина: 6.9 м",
+          "Макс. скорость: 155 км/ч",
+          "Коробка передач: механическая"
+        ]
+      },
+      // Остальные данные автобусов...
+    ];
+
+    // Модальное окно для автобусов
+    const modal = document.getElementById('busModal');
+    const modalClose = document.querySelector('.modal-close');
+    const viewButtons = document.querySelectorAll('.btn-view');
+
+    viewButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const busId = parseInt(btn.dataset.id);
+        const busData = busesData.find(bus => bus.id === busId);
+        
+        if (busData) {
+          document.getElementById('modalBusImg').src = busData.image;
+          document.getElementById('modalBusTitle').textContent = busData.title;
+          document.getElementById('modalBusPrice').textContent = busData.price;
+          document.getElementById('modalBusText').textContent = busData.description;
+          
+          const featuresContainer = document.getElementById('modalBusFeatures');
+          featuresContainer.innerHTML = '';
+          busData.features.forEach(feature => {
+            featuresContainer.innerHTML += `
+              <div class="modal-feature">
+                <i class="fas fa-${feature.icon}"></i> ${feature.text}
+              </div>
+            `;
+          });
+          
+          const specsContainer = document.getElementById('modalBusSpecs');
+          specsContainer.innerHTML = '';
+          busData.specs.forEach(spec => {
+            specsContainer.innerHTML += `<li>${spec}</li>`;
+          });
+          
+          modal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('open');
+      document.body.style.overflow = 'auto';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</body>
+</html>
